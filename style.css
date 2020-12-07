@@ -14,7 +14,7 @@ body{
 }
 
 #body::selection{
-    color: turquoise;
+    color: var(--primary-color);
 } 
 
 /* Navbar */
@@ -48,13 +48,17 @@ body{
 /* Input div */
 #form-txt-input{
     display: block;
-    margin: 25px auto 0 auto;
+    margin: 15px auto 0 auto;
     height: 20vh;
     width: 60%;
     min-width: 400px;
     max-width: 600px;
     border: solid 2px var(--secondary-color);
     outline: none;
+    font-size: 1.3rem;
+    color: #119487;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
 }
 
 #form-btn-translate{
@@ -122,6 +126,9 @@ a:visited {
     max-width: 600px;
     background: white;
     border: solid 2px var(--secondary-color);
+    font-size: 1.3rem;
+    color: #119487;
+    padding: 10px;
 }
 
 /* footer */
@@ -130,14 +137,14 @@ a:visited {
     bottom: 0;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(62,227,210,1) 100%);
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
 }
 
 #about-container{
-     width: 70%;
+     width: 85%;
      margin-left: auto;
      margin-right: auto;
-     padding: 30px;
+     padding: 20px;
 }
 
 #about-heading{
@@ -148,18 +155,3 @@ a:visited {
 #about p{
     margin: 0;
 }
-
-/* TO DO */
-/* Make Responsive */
-/* If copy text then highlighter text will the primary color */
-
-
-/* text #CFE49D */
-/* background #4200F8 */
-
-
-
-
-/* #new-quote::selection{
-    color: turquoise;
-}  */
