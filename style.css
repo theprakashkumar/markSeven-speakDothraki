@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root{
+    --primary-color: #40e0d0;
+    --secondary-color: #000000;
+    --main-background: rgb(245, 245, 245); 
+}
+
+body{
+    margin: 0;
+    background-color: var(--main-background);
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#body::selection{
+    color: turquoise;
+} 
+
+/* Navbar */
+#nav{
+    height: 9vh;
+    margin-top: 20px;
+}
+
+#nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-heading{
+    font-weight: 300;
+    font-size: 1.8rem;  
+}
+
+#nav-hr{
+    width: 200px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/* Input div */
+#form-txt-input{
+    display: block;
+    margin: 25px auto 0 auto;
+    height: 20vh;
+    width: 60%;
+    min-width: 400px;
+    max-width: 600px;
+    border: solid 2px var(--secondary-color);
+    outline: none;
+}
+
+#form-btn-translate{
+    background: var(--main-background);
+    color: var(--secondary-background);
+    display: block;
+    margin: 15px auto;
+    border: 2px solid var(--secondary-color);
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    transition: background-color 0.5s;
+}
+
+#form-btn-translate:hover {
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+  }
+
+/* Output Div */
+#output-heading{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#output-div-container{
+    display: flex;
+    justify-content: center;
+    width: 66vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 17px;
+}
+
+#output-share{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+.output-share-button{
+    color: var(--secondary-background);
+    transition: color 0.25s;
+}
+
+.output-share-button:hover{
+    color: var(--primary-color);
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#output-div{
+    height: 20vh;
+    width: 60vw;
+    min-width: 400px;
+    max-width: 600px;
+    background: white;
+    border: solid 2px var(--secondary-color);
+}
+
+/* footer */
+#about{
+    position: fixed;
+    bottom: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(62,227,210,1) 100%);
+    font-size: 1.25rem;
+}
+
+#about-container{
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 30px;
+}
+
+#about-heading{
+    font-weight: 600;
+    color: var(--tertiary-color);
+}
+
+#about p{
+    margin: 0;
+}
+
+/* TO DO */
+/* Make Responsive */
+/* If copy text then highlighter text will the primary color */
+
+
+/* text #CFE49D */
+/* background #4200F8 */
+
+
+
+
+/* #new-quote::selection{
+    color: turquoise;
+}  */
