@@ -51,7 +51,7 @@ body{
     margin: 15px auto 0 auto;
     height: 20vh;
     width: 60%;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 600px;
     border: solid 2px var(--secondary-color);
     outline: none;
@@ -89,6 +89,12 @@ body{
     margin-bottom: 15px;
 }
 
+@media only screen and (max-width:380px){
+    #output-heading{
+        font-size: 1.25rem;
+    }
+}
+
 #output-div-container{
     display: flex;
     justify-content: center;
@@ -122,7 +128,7 @@ a:visited {
 #output-div{
     height: 20vh;
     width: 60vw;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 600px;
     background: white;
     border: solid 2px var(--secondary-color);
@@ -131,6 +137,14 @@ a:visited {
     padding: 10px;
 }
 
+@media only screen and (max-width: 450px){
+    #output-div, #form-txt-input{
+        min-width: 240px;
+        font-size: 1rem;
+    }
+}
+
+
 /* footer */
 #about{
     position: fixed;
@@ -138,6 +152,14 @@ a:visited {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(62,227,210,1) 100%);
     /* font-size: 1.25rem; */
+}
+
+@media only screen and (max-width: 800px) {
+    #about{
+        position: static;
+        margin-top: 50px;
+        font-size: 1.15rem;
+    }
 }
 
 #about-container{
