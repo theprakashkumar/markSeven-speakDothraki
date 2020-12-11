@@ -72,6 +72,7 @@ body{
     font-weight: 500;
     outline: none;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 
 #form-btn-translate:hover {
