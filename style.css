@@ -14,7 +14,7 @@ body{
 }
 
 #body::selection{
-    color: var(--primary-color);
+    background: var(--primary-color);
 } 
 
 /* Navbar */
@@ -144,7 +144,6 @@ a:visited {
         font-size: 1rem;
     }
 }
-
 
 /* footer */
 #about{
