@@ -5,10 +5,7 @@ let outputDiv=document.querySelector("#output-div");
 let twitter=document.querySelector("#output-twitter");
 let whatsapp=document.querySelector("#output-whatsapp");
 
-
 let serverURL="https://api.funtranslations.com/translate/dothraki.json";
-
-// let serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 // Take input from textarea and make url to make request
 function getTranslationgURL(text){
@@ -33,7 +30,7 @@ function clickHandler(){
 // Add event listner to the button
 button.addEventListener("click", clickHandler);
 
-// Share on Twitter
+// Share the translated sentence, window.open will open the linke in new window
 function shareTwitter(){
     outputDiv.innerText ? window.open(`https://twitter.com/intent/tweet?text=${outputDiv.innerText}&hashtags=dothraki`) : alert("Please Translate First!");
 }
